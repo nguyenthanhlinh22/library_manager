@@ -1,0 +1,16 @@
+.container h1:hover {
+  color: blue;
+}
+.container img {
+  width: 400px;
+  height: 200px;
+}
+.container .list ol li {
+  list-style: none;
+}
+.container .video video {
+  width: 400px;
+  height: 200px;
+}
+
+/*# sourceMappingURL=style.css.map */
