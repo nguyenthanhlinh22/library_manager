@@ -1,0 +1,12 @@
+{
+  "name": "thuc_hanh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" :"sass sass:asset/css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
