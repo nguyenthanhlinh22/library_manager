@@ -1,0 +1,54 @@
+/*reset */
+*,::after,
+::before{
+    box-sizing: border-box;
+}
+
+/*form*/
+.container{
+    height: 400px;
+    width: 500px;
+    border: #c0ffe3 solid 2px;
+    margin: 0 auto;
+    background-color: #c0ffe3;
+}
+form{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.hobies{
+    height: 350px;
+    width: 450px;
+    border: #c0ffe3 solid 2px;
+    /*text-align: center;*/
+    background-color: white;
+}
+h1{
+    color: white;
+    background-color: red;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+.hoten{
+    float: left;
+    margin-bottom: 5px;
+    padding-left: 70px;
+
+}
+.gm{
+    float: left;
+    margin-bottom: 5px;
+    padding-left: 100px;
+
+}
+.table td{
+    color: blue;
+}
+label{
+    color: orangered;
+}
