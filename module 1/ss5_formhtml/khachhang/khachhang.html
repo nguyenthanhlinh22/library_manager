@@ -5,9 +5,252 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>survey</title>
+    <style>
+        *,::after,
+        ::before{
+            box-sizing: border-box;
+        }
+
+        h1 , p{
+            margin: 0 auto;
+        }
+        .select  {
+            margin-bottom: 20px;
+
+
+        }
+        .select p {
+            font-weight: bold;
+            font-size: large;
+
+        }
+        .box{
+            width: 50%;
+            height: 30px;
+            font-size: 17px;
+        }
+        .radio p {
+            font-weight: bold;
+        }
+        .radio input {
+            margin-top: 10px;
+        }
+        .check-box p {
+            margin-top: 25px ;
+            font-weight: bold;
+        }
+        .check-box input {
+            margin-top: 15px;
+            font-size: 17px;
+        }
+        .money p {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .content p {
+            margin-top: 15px;
+            font-weight: bold;
+
+        }
+
+    .big .lv {
+        border: 1px solid black ;
+        border-collapse: collapse;
+
+    }
+
+
+
+
+
+
+
+    </style>
 </head>
 <body>
+<div class="container">
+    <h1> Market Reseach Survey</h1>
+    <p> Please take few moment to complete satisfaction survey </p>
+    <hr>
+
+    <div class="select">
+        <p>What is your ranger ?</p>
+        <select class="box">
+            <option>--Age--</option>
+            <option>18-24</option>
+            <option>25-34</option>
+            <option>35-50</option>
+            <option>50+</option>
+        </select>
+    </div>
+    <div class="select">
+        <p>What is your yearly income range?</p>
+        <select class="box" >
+            <option>--Price--</option>
+            <option> $0 - $25,000</option>
+            <option>$25,001 - $50,000 </option>
+            <option>$50,001 - $100,000</option>
+            <option>$100,000+</option>
+        </select>
+
+    </div>
+    <div class="radio">
+        <p>Gender Identity</p>
+        <label><input type="radio" name="gioitinh" >Male</label><br>
+        <label><input type="radio" name="gioitinh" >Female</label><br>
+        <label><input type="radio" name="gioitinh" >Nonbinary</label><br>
+        <label><input type="radio" name="gioitinh" >other</label><br>
+
+    </div>
+    <div class="check-box">
+        <p>Which of the following products have your purchased in the last 2 months. Please check all that apply.</p>
+        <label><input type="checkbox" name="gioitinh" >Product 1</label><br>
+        <label><input type="checkbox" name="gioitinh" >Product 2</label><br>
+        <label><input type="checkbox" name="gioitinh" >Product 3</label><br>
+    </div>
+    <div class="radio">
+        <p style="margin-top: 15px">How often would you use our new product?</p>
+        <label><input type="radio" name="day" >Daily</label><br>
+        <label><input type="radio" name="day" >Weekly</label><br>
+        <label><input type="radio" name="day" >Monthly</label><br>
+    </div>
+  <div class="money">
+      <p>
+          How often would you use our new product?
+      </p>
+      <table>
+          <tr>
+              <td>
+                  $
+              </td>
+              <td>
+                  <input type="text" size="5">
+              </td>
+                <td>.</td>
+              <td>
+                   <input type="text" size="1">
+              </td>
+          </tr>
+          <tr>
+              <td>
+
+              </td>
+              <td>
+                  Dollas
+              </td>
+              <td></td>
+              <td>
+                  center
+              </td>
+          </tr>
+      </table>
+  </div>
+    <div class="content">
+        <p> What feature you pay for the new product.</p>
+        <textarea name="" id="" cols="100" rows="10"></textarea>
+    </div>
+    <p  style="font-size: 19px ;font-weight: bold; margin-top: 10px">Please rate your lever  of agreement with the folowing statements.</p>
+    <div  class="big">
+
+        <table class="lv" style="border-collapse: collapse">
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    Strongly Dissagree
+                </td>
+                <td>
+                    Dissagree
+                </td>
+                <td>
+                    Agree
+                </td>
+                <td>
+                    Strongly Agree
+                </td>
+            </tr>
+            <tr style="text-align: center">
+                <td >
+                    Our products are priced fairly.
+
+                </td>
+                <td>
+                    <input type="radio" name="1"><br>
+                    1
+                </td>
+                <td>
+                    <input type="radio" name="1"><br>
+                    2
+                </td>
+                <td>
+                    <input type="radio" name="1"><br>
+                    3
+                </td>
+                <td>
+                    <input type="radio" name="1"><br>
+                    4
+                </td>
+            </tr>
+            <tr style="text-align: center">
+                <td >
+                    Our products are high quality.
+
+                </td>
+                <td>
+                    <input type="radio" name="2"><br>
+                    1
+                </td>
+                <td>
+                    <input type="radio" name="2"><br>
+                    2
+                </td>
+                <td>
+                    <input type="radio" name="2"><br>
+                    3
+                </td>
+                <td>
+                    <input type="radio" name="2"><br>
+                    4
+                </td>
+
+
+            </tr>
+            <tr style="text-align: center">
+                <td >
+                    You would recommend our product to a friend or coworker.
+
+                </td>
+                <td>
+                    <input type="radio" name="3"><br>
+                    1
+                </td>
+                <td>
+                    <input type="radio" name="3"><br>
+                    2
+                </td>
+                <td>
+                    <input type="radio" name="3"><br>
+                    3
+                </td>
+                <td>
+                    <input type="radio" name="3"><br>
+                    4
+                </td>
+
+
+            </tr>
+
+        </table>
+
+    </div>
+    <input type="submit" value="Đăng kí" style="margin: 5px" >
+
+
+
+
+</div>
 
 </body>
 </html>
