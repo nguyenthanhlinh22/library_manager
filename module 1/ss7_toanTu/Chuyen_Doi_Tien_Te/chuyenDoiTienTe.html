@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chuyển đổi Tiền Tệ </title>
+</head>
+<body>
+<form>
+  <table>
+    <tr>
+      <th><label for="Money">amount</label> </th>
+      <th>From Currency</th>
+      <th>to Currency</th>
+    </tr>
+    <tr>
+      <td>
+         <input type="number" name="money" id="Money" placeholder="Nhập số tiền ">
+      </td>
+      <td>
+        <select id="from">-->
+              <option name="" VALUE="vnd">VNĐ</option>
+              <option name="" value="usd">USD</option>
+        </select>
+      </td>
+      <td>
+        <select id="To">
+              <option name="" value="vnd">VNĐ</option>
+              <option name="" value="usd">USD</option>
+        </select>
+      </td>
+      <td>
+        <button onclick="chuyendoi()">Convert</button>
+      </td>
+    </tr>
+
+  </table>
+</form>
+
+<script>
+  function chuyendoi() {
+      let amount = +document.getElementById("money").value;
+      let From = +document.getElementById("from").value;
+      let To = +document.getElementById("To").value;
+      let resut ;
+
+      if{Form == "vnd" && To == "usd"}{
+          resut = "resut" + amount*23000 + "Đ";
+      }
+      else if (To == "usd" && Form == "vnd"){
+          resut = "resut" + amount/23000 + "$";
+      }
+      else if{ From == "vnd"}{
+          resut = "resut" +amount + "đ";
+      }
+      else{
+          resut = "resut" + amount + "$";
+      }
+
+
+    document.getElementById("resut").innerHTML= "đã chuyển đổi " + resut ;
+
+
+  }
+</script>
+</body>
+</html>

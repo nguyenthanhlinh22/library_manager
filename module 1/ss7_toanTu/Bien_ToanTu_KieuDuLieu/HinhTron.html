@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hình tròn </title>
+</head>
+<body>
+<input type="number" name="hinhtron" id="r" placeholder="Nhập Bán kính">
+<button onclick="chuyendoi()" > Nhập </button>
+<p id="dienTich"></p>
+<p id="chuVi"></p>
+<script>
+  function chuyendoi() {
+          let  r = +document.getElementById("r").value;
+          let S = r*r*3.14;
+          let C = (r*2)*3.14;
+            document.getElementById("dienTich").innerHTML= "Diện Tích Của Hình Tròn : " + S ;
+            document.getElementById("chuVi").innerHTML= "Chu Vi  Của Hình Tròn : " + C ;
+
+
+  }
+</script>
+</body>
+</html>

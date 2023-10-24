@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quy Đổi Nhiệt Độ</title>
+</head>
+<body>
+<input type="number" name="number" id="C">
+<button onclick="Chuyendoi()" >Nhập </button>
+<p id="DoF"></p>
+<script>
+
+ function Chuyendoi() {
+     let  doC = +document.getElementById("C").value;
+     let  doF = (9*doC) +35 ;
+     document.getElementById("DoF").innerHTML= "Độ F : " + doF ;
+     
+ }
+</script>
+
+</body>
+</html>
