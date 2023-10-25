@@ -4,64 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chuyển đổi Tiền Tệ </title>
 </head>
 <body>
-<form>
-  <table>
-    <tr>
-      <th><label for="Money">amount</label> </th>
-      <th>From Currency</th>
-      <th>to Currency</th>
-    </tr>
-    <tr>
-      <td>
-         <input type="number" name="money" id="Money" placeholder="Nhập số tiền ">
-      </td>
-      <td>
-        <select id="from">
-              <option name="" VALUE="vnd">VNĐ</option>
-              <option name="" value="usd">USD</option>
-        </select>
-      </td>
-      <td>
-        <select id="To">
-              <option name="" value="vnd">VNĐ</option>
-              <option name="" value="usd">USD</option>
-        </select>
-      </td>
-      <td>
-        <button onclick="chuyendoi()">Convert</button>
-      </td>
-    </tr>
-
-  </table>
-</form>
-
-<script >
-    function chuyendoi() {
+    <table>
+        <tr>
+            <th><label for="money">amount</label></th>
+            <th>From Currency</th>
+            <th>to Currency</th>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" name="money" id="money" placeholder="Nhập số tiền ">
+            </td>
+            <td>
+                <select id="from">
+                    <option name="vnd" value="vnd">VNĐ</option>
+                    <option name="usd" value="usd">USD</option>
+                </select>
+            </td>
+            <td>
+                <select id="to">
+                    <option name="vnd" value="vnd">VNĐ</option>
+                    <option name="usd" value="usd">USD</option>
+                </select>
+            </td>
+            <td>
+                <button type="button" onclick="chuyenDoi()">Convert</button>
+            </td>
+        </tr>
+    </table>
+<div id="result"></div>
+<script>
+    function chuyenDoi() {
         let amount = +document.getElementById("money").value;
-        let Form = +document.getElementById("from").value;
-        let To = +document.getElementById("To").value;
-        let result ;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+        let result;
 
-        if (Form == "usd" && To == "vnd"){
+        if (from === "usd" && to === "vnd") {
             result = "result" + (amount * 23000) + "Đ";
-        }else if (To == "vnd" && Form == "usd"){
-            result = "result" + (amount/23000) + "$";
-        }else if( From == "vnd"){
-            result = "result" + amount + "đ";
-        }else{
+        } else if (from === "vnd" && to === "usd") {
+            result = "result" + (amount / 23000) + "$";
+        } else {
             result = "result" + amount + "$";
         }
+        document.getElementById("result").innerHTML = result;
     }
-
-
-
-    document.getElementById("result").innerHTML=  result  ;
-
-
 
 
 </script>
