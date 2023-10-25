@@ -20,7 +20,7 @@
          <input type="number" name="money" id="Money" placeholder="Nhập số tiền ">
       </td>
       <td>
-        <select id="from">-->
+        <select id="from">
               <option name="" VALUE="vnd">VNĐ</option>
               <option name="" value="usd">USD</option>
         </select>
@@ -39,31 +39,31 @@
   </table>
 </form>
 
-<script>
-  function chuyendoi() {
-      let amount = +document.getElementById("money").value;
-      let From = +document.getElementById("from").value;
-      let To = +document.getElementById("To").value;
-      let resut ;
+<script >
+    function chuyendoi() {
+        let amount = +document.getElementById("money").value;
+        let Form = +document.getElementById("from").value;
+        let To = +document.getElementById("To").value;
+        let result ;
 
-      if{Form == "vnd" && To == "usd"}{
-          resut = "resut" + amount*23000 + "Đ";
-      }
-      else if (To == "usd" && Form == "vnd"){
-          resut = "resut" + amount/23000 + "$";
-      }
-      else if{ From == "vnd"}{
-          resut = "resut" +amount + "đ";
-      }
-      else{
-          resut = "resut" + amount + "$";
-      }
+        if (Form == "usd" && To == "vnd"){
+            result = "result" + (amount * 23000) + "Đ";
+        }else if (To == "vnd" && Form == "usd"){
+            result = "result" + (amount/23000) + "$";
+        }else if( From == "vnd"){
+            result = "result" + amount + "đ";
+        }else{
+            result = "result" + amount + "$";
+        }
+    }
 
 
-    document.getElementById("resut").innerHTML= "đã chuyển đổi " + resut ;
+
+    document.getElementById("result").innerHTML=  result  ;
 
 
-  }
+
+
 </script>
 </body>
 </html>

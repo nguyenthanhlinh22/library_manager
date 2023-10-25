@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>máy tính</title>
+</head>
+<body>
+  <input type="number" id="num1">
+  <input type="number" id="num2">
+<table>
+  <tr>
+    <th>
+      <button onclick="cong()">Adition (+)</button>
+    </th>
+    <th>
+      <button onclick="tru()">Subtraction (-)</button>
+    </th>
+    <th>
+      <button onclick="nhan()"> multiplication(X)</button>
+    </th>
+    <th>
+      <button onclick="chia()">Division (/)</button>
+    </th>
+  </tr>
+</table>
+<h3>result</h3>
+<div id="result"></div>
+
+
+<script>
+  function cong() {
+    let number1 = +document.getElementById("num1").value;
+    let number2 = +document.getElementById("num2").value;
+    let result = Number(number1) + Number(number2);
+    document.getElementById("result").innerHTML = "day la ket qua " + result ;
+  }
+  function tru() {
+    let number1 = +document.getElementById("num1").value;
+    let number2 = +document.getElementById("num2").value;
+    let result = Number(number1) - Number(number2);
+    document.getElementById("result").innerHTML = "day la ket qua " + result ;
+  }
+  function nhan() {
+    let number1 = +document.getElementById("num1").value;
+    let number2 = +document.getElementById("num2").value;
+    let result = Number(number1) * Number(number2);
+    document.getElementById("result").innerHTML = "day la ket qua " + result ;
+  }
+  function chia() {
+    let number1 = +document.getElementById("num1").value;
+    let number2 = +document.getElementById("num2").value;
+    let result = Number(number1) / Number(number2);
+    document.getElementById("result").innerHTML = "day la ket qua " + result ;
+  }
+</script>
+
+
+</body>
+</html>
