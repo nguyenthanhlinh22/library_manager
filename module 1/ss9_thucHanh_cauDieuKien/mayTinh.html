@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .maytinh tr td {
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" name="" id="bangtinh">
+        <table id="maytinh">
+            <tr>
+                <td>
+                    <button id="num1" value="1" onclick="inputValue(this.value)">1</button>
+                    <button id="num2" value="2" onclick="inputValue(this.value)">2</button>
+                    <button id="num3" value="3" onclick="inputValue(this.value)">3</button>
+                    <button value="+" onclick="inputValue(this.value)">+</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="num4" value="4" onclick="inputValue(this.value)">4</button>
+                    <button id="num5" value="5" onclick="inputValue(this.value)">5</button>
+                    <button id="num6" value="6" onclick="inputValue(this.value)">6</button>
+                    <button value="-" onclick="inputValue(this.value)">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="num7" value="7" onclick="inputValue(this.value)">7</button>
+                    <button id="num8" value="8" onclick="inputValue(this.value)">8</button>
+                    <button id="num9" value="9" onclick="inputValue(this.value)">9</button>
+                    <button value="x" onclick="inputValue(this.value)">x</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="reset" value="Ac" onclick="reset()"> c</button>
+                    <button id="num0" value="0" onclick="inputValue(this.value)">0</button>
+                    <button value="=" onclick="result()">=</button>
+                    <button value="/" onclick="inputValue(this.value)">/</button>
+                </td>
+            </tr>
+        </table>
+
+    </div>
+    <script>
+       
+       let maytinh = document.getElementById("maytinh");
+       function inputValue(value){
+        return maytinh.value += value ; 
+
+       }
+       function result(){
+        let reset = eval(maytinh.result);
+        maytinh.value =result ;
+       }
+
+       function reset(){
+        maytinh.value = "";
+       }
+
+
+    </script>
+</body>
+</html>
