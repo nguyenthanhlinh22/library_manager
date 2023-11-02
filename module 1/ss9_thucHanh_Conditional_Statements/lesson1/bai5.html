@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result">
+
+    </p>
+    <script>
+        let diemKiemTra = parseInt(prompt("nhập điểm kiểm tra của bạn"));
+        let diemGiuaKy  = parseInt(prompt("nhập điểm thi giữa kì của bạn"));
+        let diemThiCuoiKy = parseInt(prompt("nhập điểm thi cuối kì của bạn "));
+        let trungbinh = Number(diemKiemTra) + Number(diemGiuaKy) + Number(diemThiCuoiKy*2);
+        let diem = trungbinh/4;
+
+
+        if(diem >= 9 ){
+            document.getElementById("result").innerHTML = "điêm của bạn là :" + a + " bạn đạt học sinh xuất sắc" ;
+        }else if(diem >= 8 ){
+            document.getElementById("result").innerHTML = "điểm của bạn là " +diem + "bạn đạt học sinh giỏi ";
+
+        }else if (diem >= 6.5 ){
+            document.getElementById("result").innerHTML= "điểm của bạn là :"+ diem + " bạn đạt học sinh khá";
+        }else if ( diem >=5 ){
+            document.getElementById("result").innerHTML= "điểm của bạn là"+ diem + " bạn là học sinh trung bình bạn cần cố gắng hơn";
+        }else if(diem > 3.5 ){
+            document.getElementById("result").innerHTML="Điểm của bạn là " + diem + "bạn là học sinh kém bạn hãy thi lại để được lên lớp ";
+
+        }else {
+            document.getElementById("result").innerHTML="Điểm của bạn là "+ diem + "bạn bị lưu bạn"
+        }
+    </script>
+</body>
+</html>

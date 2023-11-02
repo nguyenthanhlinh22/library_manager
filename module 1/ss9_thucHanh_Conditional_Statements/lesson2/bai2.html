@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="met">
+    <button onclick="chuyendoi()">đổi</button>
+    <p id="result"></p>
+<script>
+    function chuyendoi(){
+        let met = document.getElementById("met").value;
+        let ft = met * 3.2808
+        document.getElementById("result").innerHTML = "feet :" + ft ; 
+    }
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="result"></P>
+    <script>
+        let a = parseInt(prompt("nhập số nguyên thứ nhất"));
+        let b = parseInt(prompt("nhập số nguyên thứ nhất"));
+        let c = parseInt(prompt("nhập số nguyên thứ nhất"));
+
+        if( a > b){
+            document.getElementById("result").innerHTML = "số lớn nhất là a : " + a ;
+        }else if( b > c ){
+            document.getElementById("result").innerHTML = " số lớn nhất là b : " + b ;
+
+        }else if( c > a ){
+            document.getElementById("result").innerHTML = " số lớn nhất là c :" + c ;
+        }else{
+            document.getElementById("result").innerHTML =" mời bạn nhập lại";
+        }
+    </script>
+    
+</body>
+</html>

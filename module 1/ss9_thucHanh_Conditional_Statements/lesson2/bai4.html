@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        let a = parseInt(prompt("nhập cạnh a "));
+        let b = parseInt(prompt("nhập cạnh b "));
+        let s = a*b ;
+        if( a * b < 0 ){
+            document.write("bạn đã làm sai ");
+        }else{
+            document.write("BẠN ĐÃ LÀM ĐÚNG ");
+           document.getElementById("result").innerHTML = "diện tích của hình chữ nhật là : "+ s ; 
+        }
+    </script>
+    
+</body>
+</html>

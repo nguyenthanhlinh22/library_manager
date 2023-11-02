@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label><input type="number" id="a"></label>
+    <label><input type="number" id="b"></label>
+    <button onclick="tinhtoan()">nhấn</button>
+    <p id="result"></p>
+    <script>
+       
+        function tinhtoan(){
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let x = (-b)/a ;
+            if( a === 0 && b ===0 ){
+                document.getElementById("result").innerHTML = "phép toán có vô số nghiệm" ;
+            }else if (a===0 && b !==0 ){
+                document.getElementById("result").innerHTML = "phương trình vô nghiệm ";
+            }else if(a!== 0){
+                document.getElementById("result").innerHTML = "phương trình có một nghiệm duy nhất " + x ;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+        
+        let doanhSoNam = parseInt(prompt("doanh số bán dược trong một năm của bạn "));
+        
+        
+        if(doanhSoNam>= 30000000){
+            document.getElementById("result").innerHTML= " đây là hoa hồng của bạn : " +   Math.round(doanhSoNam/6);
+        }
+       
+
+    </script>
+</body>
+</html>

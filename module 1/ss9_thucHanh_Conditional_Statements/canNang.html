@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tính số cân nặng </title>
+</head>
+<body>
+
+
+<p id="result">  </p>
+  <script>
+    let weight = parseInt(prompt("nhập cân nặng"));
+    let height =  parseInt(prompt("nhập chiều cao"));
+    let bmi = weight / Math.pow(height , 2 );
+
+
+    if (bmi < 18.5 ){
+        console.log("bạn bị thiếu cân ");
+    }else if(18.5 <= bmi < 25 ){
+        console.log("bạn bình thường ");
+    }else if (25 <= bmi < 30.0){
+        console.log("bạn hơi thừa cân");
+    }else  if( 30 <= bmi ){
+        console.log("bạn mập vcl");
+    }else {
+        console.log("bạn nhập lại ")
+    }
+
+  </script>
+
+</body>
+</html>

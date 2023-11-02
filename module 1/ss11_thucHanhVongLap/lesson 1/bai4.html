@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var n1 = 1, n2 = 1;
+    var n3;
+    var i = 0;
+
+    while (i < 45) { // Điều kiện vòng lặp phải là i < 45, không phải i > 45
+        n3 = n1 + n2;
+        n1 = n2;
+        n2 = n3;
+
+        if (n3 % 5 === 0) { // Chia hết cho 2, không phải 5
+       document.write(n3 + "<br>")
+
+        }
+
+        i++;
+    }
+</script>
+</body>
+</html>

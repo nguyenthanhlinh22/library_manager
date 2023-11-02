@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="number" id="C">
+    <button onclick="Chuyendoi()" >Nhập </button>
+    <p id="DoF"></p>
+    <script>
+    
+     function Chuyendoi() {
+         let  doC = +document.getElementById("C").value;
+         let  doF = (9*doC) +35 ;
+         document.getElementById("DoF").innerHTML= "Độ F : " + doF ;
+         
+     }
+    </script>
+</body>
+</html>
