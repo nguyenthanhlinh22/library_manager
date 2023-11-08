@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+   let diencu = parseInt(prompt("số điện cũ "));
+   let dienmoi = parseInt(prompt("số điện mơi "))
+   let dinhmuc = dienmoi - diencu ;
+   let dienbaoke = 1000 ;
+   let giadien ;
+   if (dinhmuc === 50){
+     giadien = dinhmuc * 230 + dienbaoke ;
+     document.write(giadien);
+   }else if(dinhmuc <= 50){
+     giadien = dinhmuc * 480 + dienbaoke;
+     document.write(giadien);
+   }else if (50<dinhmuc<100){
+     giadien = dinhmuc * 700 + dienbaoke ;
+     document.write(giadien);
+   }else if( dienbaoke <= 100 ){
+     giadien = dinhmuc*900 + dienbaoke ;
+     document.write(giadien)
+   }else {
+     document.write("erros")
+   }
+
+
+
+</script>
+
+</body>
+</html>

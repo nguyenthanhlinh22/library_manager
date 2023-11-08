@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <label><input type="text" id="string"></label>
+<button onclick="tudien()">Dịch</button>
+<p id="result"></p>
+<script>
+          let arr_anh = ["apple" , "banana" , "orange"];
+          let arr_vie = ["táo" , "chuối" , "cam "];
+          let result = "" ; 
+          function tudien() {
+              let input = document.getElementById("string").value;
+              // tim kiem tu trong tu dien tieng anh-viet
+              let index_anh = arr_anh.indexOf(input);
+
+              if (index_anh !== -1){
+                  result = arr_vie[index_anh];
+              }else{
+                  result = " ko thấy gì cả ";
+              }
+              document.getElementById("result").textContent = result ;
+              
+          }
+</script>
+</body>
+</html>

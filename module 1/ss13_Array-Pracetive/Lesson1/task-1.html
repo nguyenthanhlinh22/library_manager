@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Khởi tạo mảng số nguyên gồm 10 phần tử
+    let mangSoNguyen = [5, 12, 8, 15, 3, 10, 18, 7, 11, 6];
+
+    // Khởi tạo biến đếm số phần tử lớn hơn hoặc bằng 10
+    let dem = 0;
+
+    // Duyệt qua từng phần tử trong mảng và kiểm tra
+    for (let i = 0; i < mangSoNguyen.length; i++) {
+        if (mangSoNguyen[i] >= 10) {
+            dem++;
+        }
+    }
+
+    // Hiển thị kết quả
+    console.log(`Có ${dem} số nguyên lớn hơn hoặc bằng 10 trong mảng.`);
+</script>
+
+</body>
+</html>

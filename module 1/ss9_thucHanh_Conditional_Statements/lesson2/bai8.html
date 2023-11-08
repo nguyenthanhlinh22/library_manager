@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <button onclick="tinhage()">nhập </button>
+<script>
+  function tinhage() {
+    let age = parseInt(prompt("nhập tuổi"));
+     if (age >= 120 ){
+       document.write(" bạn nhập tuổi cao hơn số tuổi " + age )
+     }else if ( age < 0 ){
+       document.write("bạn nhập số tuổi nhỏ quá" +age)
+     }else {
+       document.write("bạn nhập đúng" +age)
+     }
+
+  }
+</script>
+
+</body>
+</html>

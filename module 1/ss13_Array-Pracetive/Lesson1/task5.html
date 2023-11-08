@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Chuỗi cần kiểm tra
+  let chuoi = "Hello, -123 and 456 are negative numbers.";
+
+  // Hàm đếm số nguyên âm trong chuỗi
+  function demSoNguyenAm(chuoi) {
+    // Sử dụng biểu thức chính quy để tìm tất cả số nguyên âm trong chuỗi
+    let soNguyenAm = chuoi.match(/-\d+/g);
+
+    // Kiểm tra xem có số nguyên âm nào trong chuỗi hay không
+    if (soNguyenAm === null) {
+      return 0; // Không có số nguyên âm
+    } else {
+      return soNguyenAm.length; // Trả về số lượng số nguyên âm
+    }
+  }
+
+  // Gọi hàm và hiển thị kết quả
+  let soLuongSoNguyenAm = demSoNguyenAm(chuoi);
+  console.log(`Số lượng số nguyên âm trong chuỗi: ${soLuongSoNguyenAm}`);
+
+
+</script>
+
+</body>
+</html>

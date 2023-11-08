@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  // Khởi tạo một mảng để lưu trữ dữ liệu
+  let mangSoNguyen = [];
+
+  // Sử dụng vòng lặp để nhập 10 số nguyên từ người dùng
+  for (let i = 0; i < 10; i++) {
+    let so = parseInt(prompt(`Nhập số nguyên thứ ${i + 1}:`));
+    mangSoNguyen.push(so);
+  }
+
+  // Khởi tạo biến đếm số phần tử lớn hơn hoặc bằng 10
+  let dem = 0;
+
+  // Duyệt qua từng phần tử trong mảng và kiểm tra
+  for (let i = 0; i < mangSoNguyen.length; i++) {
+    if (mangSoNguyen[i] >= 10) {
+      dem++;
+    }
+  }
+
+  // Hiển thị kết quả
+  console.log(`Có ${dem} số nguyên lớn hơn hoặc bằng 10 trong mảng.`);
+
+</script>
+
+</body>
+</html>

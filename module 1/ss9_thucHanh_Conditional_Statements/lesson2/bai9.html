@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="text" name="" id="a"></label>
+<label><input type="text" name="" id="b"></label>
+<label><input type="text" name="" id="c"></label>
+<button onclick="tinhtoan()">Tính</button>
+<p id="result"></p>
+<script>
+    function tinhtoan(){
+        let a = document.getElementById("a").value;
+        let b = document.getElementById("b").value;
+        let c = document.getElementById("c").value;
+    if ( a && b && c > 0 && a + b > c && b +c > a && a+c >b){
+        document.getElementById("result").innerHTML = " đây là hình tam giác";
+    }else {
+        document.getElementById("result").innerHTML = " đây ko phải hình tam giác"
+
+    }
+
+
+
+
+    }
+</script>
+
+</body>
+</html>

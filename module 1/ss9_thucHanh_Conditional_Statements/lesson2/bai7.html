@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <label><input type="text" name="" id="a"></label>
+  <label><input type="text" name="" id="b"></label>
+ <label> <input type="text" name="" id="c"></label>
+  <button onclick="tinhtoan()">Tính</button>
+  <p id="result">
+
+  </p>
+   <script>
+
+
+    function tinhtoan() {
+      let a = document.getElementById("a").value;
+      let b = document.getElementById("b").value;
+      let c = document.getElementById("c").value;
+      let d = (b*b) - 4*a*c ;
+      if (d>0){
+        document.getElementById("result").innerHTML= "có 2 nghiệm phân biệt là "+ "x1 =" +((-b+Math.sqrt(d))/2*a) +"<br>" + (-b-Math.sqrt(d))/2*a  ;
+      }else if( d === 0){
+        document.getElementById("result").innerHTML = "có nghiệm kép x1 = x2 =" + -(b/2*a);
+      }else if (d<0){
+        document.getElementById("result").innerHTML = " phương trình vo nghiêm";
+      }
+    }
+
+   </script>
+
+</body>
+</html>

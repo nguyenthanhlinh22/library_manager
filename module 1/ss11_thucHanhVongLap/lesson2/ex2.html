@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<body>
+
+<form>
+  <div>
+    <label for="numberInput">Nhập số nguyên dương: </label>
+    <input type="text" id="numberInput">
+  </div>
+  <div>
+    <label for="result">Kết quả giai thừa: </label>
+    <input type="text" value="1" id="result" disabled>
+  </div>
+  <button type="button" id="btnNumber">Tính</button>
+</form>
+</body>
+<script>
+  let numberInput = document.getElementById('numberInput')
+  let result = document.getElementById('result')
+  let btnNumber = document.getElementById('btnNumber')
+  let resultNumber = 1;
+  const tinhGiaithua = () => {
+    let numberValue = parseInt(numberInput.value)
+    for ( let i =1; i <= numberValue ; i++){
+      resultNumber *= i;
+    }
+    result.value = resultNumber
+    resultNumber =1;
+  }
+
+  btnNumber.addEventListener('click', tinhGiaithua)
+
+</script>
+
+</body>
+</html>

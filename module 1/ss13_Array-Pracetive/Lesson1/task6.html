@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Khởi tạo hoặc nhập mảng số nguyên
+    let mangSoNguyen = [3, 7, 12, 18, 25, 30, 42, 56, 60, 73];
+
+    // Nhập số nguyên V
+    let V = parseInt(prompt("Nhập số nguyên V:"));
+
+    // Hàm kiểm tra V có trong mảng hay không
+    function kiemTraVTrongMang(mang, V) {
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] === V) {
+                return true; // V nằm trong mảng
+            }
+        }
+        return false; // V không nằm trong mảng
+    }
+
+    // Kiểm tra và hiển thị kết quả
+    if (kiemTraVTrongMang(mangSoNguyen, V)) {
+        console.log(`${V} is in the array.`);
+    } else {
+        console.log(`${V} is not in the array.`);
+    }
+
+</script>
+
+</body>
+</html>

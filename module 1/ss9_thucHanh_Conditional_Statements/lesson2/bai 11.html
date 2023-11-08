@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let thunhap = parseInt(prompt("thu nhap cua banj la"));
+  let tinhthue ;
+  if(thunhap <= 10000000){
+    tinhthue = thunhap * 0.02 ;
+    document.write("thuế của bạn khi thu nhập 10tr trở xún" + tinhthue);
+  }else if( 10000000<thunhap< 50000000){
+    tinhthue = thunhap * 0.07 ;
+    document.write("thuế của bạn khi thu nhập trên 10 tr và duowiss 50" + tinhthue);
+  }else if (thunhap >= 50000000) {
+    tinhthue = thunhap * 0.13 ;
+    document.write("thuế của bạn khi thu nhập trên 50tr" + tinhthue);
+  }
+
+
+</script>
+
+</body>
+</html>
