@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+
+<script>
+  let arr =  ['c','s','c','2','6','1'];
+  let dau =  0;
+  let cuoi = arr.length-1 ;
+  while (dau<cuoi){
+    let b = arr[dau];
+    arr[dau] = arr[cuoi];
+    arr[cuoi] = b ;
+    dau++;
+    cuoi--;
+
+  }
+  document.write(arr.join(''))
+
+
+
+
+</script>
+
+</body>
+</html>
