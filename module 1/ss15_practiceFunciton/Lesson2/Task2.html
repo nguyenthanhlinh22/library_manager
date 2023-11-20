@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let r = parseInt(prompt("Nhập bán kinh đường tròn "));
+  let d = parseInt(prompt("nhập đường kính hình tròn "));
+  let chuviht = chuvi(r,d);
+  let dientichht = dientich(r);
+  document.write(`diện tích của bạn là ${S}  với bán kính là ${r}`+ "<br>" +"công thứ là S = r * r * 3.14" + "<br>");
+  document.write(`chu vi ủa bạn là ${r} * ${d} * 3.14 = ${C} ` + "<br> "+"với công thuc là C = r * d * 3.14")
+
+  function chuvi(r,d) {
+     C = r * d *3.14 ;
+      return C ;
+  }
+  function dientich(r) {
+    S = r * r *3.14 ;
+    return S ;
+
+  }
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+      <div id="container">
+        <h1> Temperature Converter</h1> <br>
+        <p> Type a value in the Fahrenheit field to convert</p> <br>
+        <label for="number"> Fahrenheit </label>
+<!--        this.value ở đây là hướng cho thẻ -->
+        <input type="number" name="number" id="number"
+
+          oninput="doiNhietDo(this.value)"
+          onchange="doiNhietDo(this.value)"
+               onclick="handleClick(this)"
+         > <br>
+        <label>Celcius</label>
+        <p id="result"></p>
+
+      </div>
+<script>
+
+  function handleClick(arg) {
+    console.log(arg)
+  }
+  function doiNhietDo(valNum) {
+    valNum = parseFloat(valNum);
+    document.getElementById("result").innerHTML = (valNum-32) / 1.8 ;
+
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài 8: đảo ngược mảng</h1>
+<script>
+    let arr = [3,4,5,7,9,11,44];
+    let a = arr[0];
+    let b = arr.length-1
+    function daoNguocMang(arr) {
+        while (a<b){
+            let c = arr[a];
+            arr[a] =arr[b];
+            arr[b] = c ;
+        }
+        a ++ ;
+        b -- ;
+            return arr ;
+    }
+    document.write(daoNguocMang(arr));
+</script>
+</body>
+</html>

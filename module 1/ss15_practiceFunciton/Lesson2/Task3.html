@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài tập 3 : Bài tập tính giao thừa </h1>
+
+  <script>
+    let num = parseInt(prompt("nhập số giai thừa "))
+    // let giaithuaa = giaithua(num);
+
+    function giaithua(a) {
+        if(a===0){
+          return 1 ;
+        }
+        return a * giaithua(a-1);
+    }
+    alert( giaithua(num));
+  </script>
+
+</body>
+</html>

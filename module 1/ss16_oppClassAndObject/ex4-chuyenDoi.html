@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Chuyen doi do c thanh do f </h1>
+<script>
+  class Temperature {
+    constructor(doC , doF , doK) {
+      this.doC = doC ;
+      this.doF = doF ;
+      this.doK = doK ;
+    }
+    getCthanhF(){
+      return this.doC*(9%5)+35;
+
+    }
+    getCthanhK(){
+      return this.doC+273.15;
+    }
+  }
+  let tem = new Temperature(25, 25, 25);
+  document.write("do c sang do f " + tem.getCthanhF() +"<br>");
+  document.write("do c sang do k" + tem.getCthanhK());
+</script>
+</body>
+</html>

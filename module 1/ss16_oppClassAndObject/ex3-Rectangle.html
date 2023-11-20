@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+  Xây dựng lớp hình chữ nhật
+</h1>
+<script>
+  class Rectangle {
+
+    constructor(width ,height) {
+        this.width = width ;
+        this.height = height ;
+    }
+    getPerimeter() {
+        return ( this.width + this.height) *2;
+    }
+    getArea() {
+        return this.width * this.height ;
+    }
+    setPermeter(width){
+        this.width = width ;
+    }
+    setArea(height){
+        this.height = height ;
+
+    }
+
+  }
+  let rec = new Rectangle(10 ,20);
+  document.write("with:" + rec.width + "<br>");
+  document.write("height:" + rec.height + "<br>");
+  document.write("chuvi:" + rec.getPerimeter() + "<br>");
+  document.write("dientich:" + rec.getArea() + "<br>");
+  rec.setPermeter(11)
+  rec.setArea(21)
+  document.write("day la gia tri da chuyen doi " + "<br>")
+  document.write("with:" + rec.width + "<br>");
+  document.write("height:" + rec.height + "<br>");
+  document.write("chuvi:" + rec.getPerimeter() + "<br>");
+  document.write("dientich:" + rec.getArea() + "<br>");
+</script>
+</body>
+</html>

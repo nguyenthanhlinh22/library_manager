@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function processConfirm(answer) {
+            let result = "" ;
+            if(answer){
+                result = "bạn dăng nhập thành công ";
+            }else{
+                result = "bạn đăng nhập thất bại  ";
+            }
+            return result ;
+        }
+        let conFirmAnswer = confirm("bạn hãy đăng nhập vào đây nào ");
+        let theAnswer = processConfirm(conFirmAnswer);
+        alert(theAnswer)
+        
+        
+        
+    </script>
+
+</body>
+</html>

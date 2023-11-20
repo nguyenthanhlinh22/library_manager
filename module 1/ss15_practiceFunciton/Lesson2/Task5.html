@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a1 = parseInt(prompt("nhap a "));
+  let b1 = parseInt(prompt("nhap b "));
+  let c1 = parseInt(prompt("nhap c "))
+  let nho = nhapso(a1,b1,c1);
+  document.write("so nho nhat trong 3 so la : " + nho );
+  function nhapso(a,b,c) {
+    if(b>c && a>c){
+      return c ;
+    }else if(b>a && c>a){
+      return a ;
+    }else if(a>b && c>b){
+     return b ;
+    }else {
+      return "hai hoac nhieu so bang nhau ";
+    }
+
+  }
+
+</script>
+
+</body>
+</html>

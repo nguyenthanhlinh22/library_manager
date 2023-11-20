@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Bài tập 3 </h1>
+<script>
+  function so(a ,b) {
+    if(a > b){
+     return alert(`sô thứ nhất là ${a} lon hơn số thứ hai là ${b}`);
+
+    }else if(b > a){
+      return alert(a + "+" + b +"= " + (a+b));
+    }else {
+     return  alert(`bạn đã nhập hai số giống nhau là ${a}`);
+    }
+
+  }
+  let a= parseInt(prompt("nhập số thứ 1"));
+  let b = parseInt(prompt("nhập số thứ 2"));
+
+  let num = so(a,b);
+  document.write("số thứ nhat cua ban nhap la:" +a +"<br>" + "số thứ hai của bạn nhập là :"+ b +"<br>" +
+          " và tổng hai số là :"+(a+b) );
+
+</script>
+
+</body>
+</html>

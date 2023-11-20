@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>bài đọc :Căn bản về đối tượng trong JavaScript</h1>
+<script>
+    let person = {
+        name : ['thành linh' , 'thành long'],
+        age : 19,
+        gender : 'male',
+        hobie : ['music' , 'reading', 'english'],
+        bio : function () {
+            alert(this.name[0] + 'va ' +this.name[1]+' cung la '+ this.age + ' tuổi . anh ấy thích ' + this.hobie[0] + ' và anh ấy '+this.hobie[2]);
+
+
+        },
+        greeting: function () {
+            alert("chào bạn " + this.name[0])
+        }
+    };
+    person.bio();
+    person.greeting();
+</script>
+
+</body>
+</html>
