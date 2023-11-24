@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+  <h1>Nhập chữ cái Nguyên âm hay phụ âm </h1>
+  <p id="result"></p>
+</div>
+<script>
+  let chuCai = prompt("nhập chữ cái");
+
+  if (chuCai === 'o' || chuCai === "u" || chuCai === 'i '|| chuCai === 'a' || chuCai === 'e '){
+    document.getElementById("result").innerHTML = `Chữ cái ${chuCai} là nguyên âm `;
+  }else if (chuCai === 'O' && chuCai === 'U' && chuCai === 'I' && chuCai === 'A' && chuCai === 'E' ){
+    document.getElementById("result").innerHTML = `Chữ cái ${chuCai} là nguyên âm `;
+  }else {
+    document.getElementById("result").innerHTML = `Chữ cái ${chuCai} là Phụ âm `;
+  }
+</script>
+
+
+</body>
+</html>

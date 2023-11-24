@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+
+    h1:hover{
+      color: red;
+    }
+  </style>
+</head>
+<body>
+<h1 >Tính thuế thu nhập</h1>
+<p id="result"></p>
+<script>
+  let thang = parseInt(prompt("nhập tháng hiện tại của năm 2023 "))
+  let a = parseInt(prompt("nhập lương của bạn vào đây "));
+
+
+  if (a>15000000){
+    document.getElementById("result").innerHTML=  `lương tháng ${thang} của bạn là : ` + a + " " + "Thuế Thu nhập của bạn là " + ( a*0.2)  ;
+  }else if (7000000<= a <=15000000){
+    document.getElementById("result").innerHTML=  `lương tháng ${thang}  của bạn là : ` + a + " " + "Thuế Thu nhập của bạn là " + ( a*0.1)  ;
+  }else if(a<7000000){
+    document.getElementById("result").innerHTML=  `lương tháng ${thang} của bạn là : ` + a + " " + "Thuế  Thu nhậpcủa bạn là " + ( a*0.05)  ;
+  }
+
+</script>
+
+</body>
+</html>
