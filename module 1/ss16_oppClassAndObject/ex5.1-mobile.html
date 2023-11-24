@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor(pin, dangSoanThao, hopThuDen, tinDaGui, trangThai) {
+            this.pin = pin;
+            this.dangSoanThao = dangSoanThao;
+            this.hopThuDen = hopThuDen;
+            this.tinDaGui = tinDaGui;
+            this.trangThai = trangThai;
+        }
+
+        getPin() {
+            return this.pin;
+        }
+
+        setPin(pin) {
+            this.pin = pin;
+        }
+
+        getDangSoanThao() {
+            return this.dangSoanThao;
+        }
+
+        setDangSoanThao(dangSoanThao) {
+            this.dangSoanThao = dangSoanThao;
+        }
+
+        getHopThuDen() {
+            return this.hopThuDen;
+        }
+
+        setHopThuDen(hopThuDen) {
+            this.hopThuDen = hopThuDen;
+        }
+
+        getTinDaGui() {
+            return this.tinDaGui;
+        }
+
+        setTinDaGui(tinDaGui) {
+            this.tinDaGui = tinDaGui;
+        }
+
+        getTrangThai() {
+            return this.trangThai;
+        }
+
+        setTrangThai(trangThai) {
+            this.trangThai = trangThai;
+        }
+
+        kiemTraDienThoai() {
+            if (this.trangThai) {
+                alert("Dien thoai dang bat");
+            } else {
+                alert("Dien thoai dang tat");
+            }
+        }
+
+        batDienThoai() {
+            if (this.trangThai) {
+                alert("Dien thoai dang bat");
+            } else {
+                this.trangThai = true;
+            }
+        }
+
+        tatDienThoai() {
+            if (!this.trangThai) {
+                alert("Dien thoai dang tat");
+            } else {
+                this.trangThai = false;
+            }
+        }
+
+        xacPin() {
+            if (this.pin < 100) {
+                this.pin = 100;
+            } else {
+                alert("Pin da day");
+            }
+        }
+
+        soanTinNhan() {
+            if (this.trangThai) {
+                this.dangSoanThao = prompt("Nhap tin nhan");
+                this.giamPin();
+            } else {
+                alert("Chưa bật điện thoại");
+            }
+        }
+
+        guiTinNhan(tinNhan, dienThoaiCanGui) {
+            if (this.trangThai) {
+                dienThoaiCanGui.getHopThuDen.push(tinNhan);
+                this.giamPin();
+            } else {
+                alert("Chưa bật điện thoại");
+            }
+        }
+
+        nhanTinNhan(tinNhan) {
+            this.hopThuDen.push(tinNhan);
+        }
+
+        xemTinHopThuDen() {
+            for (let i = 0; i < this.hopThuDen.length; i++) {
+                const tinNhan = this.hopThuDen[i];
+                console.log(tinNhan);
+            }
+        }
+        xemTinDaGui() {
+            for (let i = 0; i < this.tinDaGui.length; i++) {
+                const tinNhan = this.tinDaGui[i];
+                console.log(tinNhan);
+            }
+        }
+
+        giamPin() {
+            if (pin > 0) {
+                this.pin--;
+            } else {
+                this.trangThai = false;
+            }
+        }
+    }
+
+      let nokia = new Mobile(10, "hello ban ", [], [], true);
+    let iphone = new Mobile(10, "", [], [], false);
+
+      console.log(nokia, iphone);
+</script>
+</body>
+</html>

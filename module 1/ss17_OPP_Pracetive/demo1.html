@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>demo1</h1>
+<script>
+ //  function creatNewPerson(name) {
+ //    this.name = name ;
+ //    this.getting = function () {
+ //      alert("hello . i'm " + this.name + " how are you ?");
+ //    };
+ //  }
+ // let salva = new creatNewPerson('Linh');
+ // let person = new creatNewPerson('tuan');
+ // salva.name;
+ // salva.getting();
+ // person.name;
+ // person.getting();
+ function Person(last ,first ,age ,gender ,interets) {
+   this.name = {last , first};
+   this.age = age ;
+   this.gender = gender;
+   this.interets = interets ;
+   this.bio = function () {
+     document.write("last name" + this.name.last + "<br>"
+                      +"first Name"+ this.name.first + "<br>"+
+                        "AGE" + this.age + "<br>"+
+                        "Gender:"+ this.gender + "<br>"+
+                        "interest:" + this.interets[0] + this.interets[1]
+
+     )
+     this.getting = function () {
+       alert("I am " + this.name.first + ".");
+     }
+   }
+
+ }
+ let person1 = new Person("Nguyen","Linh",18 ,"Nam" ,["basketball","soccer"]);
+ let person2 = new Person("Nguyen","thanH",21 ,"Nam" ,["basketball","soccer"])
+ person1.bio();
+ person1.getting();
+ person2.bio();
+ person2.getting();
+
+ // person1.interets[1];
+
+</script>
+</body>
+</html>

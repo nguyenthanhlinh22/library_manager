@@ -7,12 +7,94 @@
 <body>
 <h1>smart Phone</h1>
 <script>
-    class mobile {
-      constructor(phamtram) {
-        this.phamtram = phamtram ;
-      }
+    class Mobile {
+        constructor() {
+            this.battery = 100;
+            this.sendingMessage = "";
+            this.inbox = [];
+            this.sentMessages = [];
+            this.isOn = false;
+        }
 
+        checkStatus() {
+            return this.isOn;
+        }
+
+        On() {
+            this.isOn = true;
+            this.battery -= 1;
+        }
+
+        Off() {
+            this.isOn = false;
+            this.battery -= 1;
+        }
+
+        chargeBattery() {
+            if (this.isOn) {
+                this.battery = Math.min(100, this.battery + 10);
+            } else {
+                console.log("Cannot charge while the phone is off.");
+            }
+        }
+
+        composeMessage(content) {
+            if (this.isOn) {
+                this.sendingMessage = content;
+                this.battery -= 1;
+            } else {
+                console.log("Cannot compose message while the phone is off.");
+            }
+        }
+
+        sendMessage(otherPhone) {
+            if (this.isOn) {
+                otherPhone.receiveMessage(this.sendingMessage);
+                this.sentMessages.push(this.sendingMessage);
+                this.sendingMessage = "";
+                this.battery -= 1;
+            } else {
+                console.log("Cannot send message while the phone is off.");
+            }
+        }
+
+        receiveMessage(message) {
+            this.inbox.push(message);
+            this.battery -= 1;
+        }
+
+        viewInbox() {
+            if (this.isOn) {
+                return this.inbox;
+            } else {
+                console.log("Cannot view inbox while the phone is off.");
+                return [];
+            }
+        }
+
+        viewSentMessages() {
+            if (this.isOn) {
+                return this.sentMessages;
+            } else {
+                console.log("Cannot view sent messages while the phone is off.");
+                return [];
+            }
+        }
     }
+
+    // Kịch bản thực hiện yêu cầu
+    const nokiaPhone = new Mobile();
+    const iphonePhone = new Mobile();
+
+    nokiaPhone.On();
+    nokiaPhone.composeMessage("Chao ban minh ten linh");
+    nokiaPhone.sendMessage(iphonePhone);
+    nokiaPhone.checkStatus();
+
+    iphonePhone.On();
+    const receivedMessages = iphonePhone.viewInbox();
+    console.log("Inbox of iPhone:", receivedMessages);
+
 
 </script>
 

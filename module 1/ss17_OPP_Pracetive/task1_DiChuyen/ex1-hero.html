@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="result"></div>
+<script>
+    class Hero {
+
+        constructor(image, top, left, size) {
+            this.image = image;
+            this.top = top;
+            this.left = left;
+            this.size = size;
+
+        }
+
+        getHeroElemt = function () {
+            return '<img width="' + this.size + '"' +
+                ' height="' + this.size + '"' +
+                ' src="' + this.image + '"' +
+                ' style="top: ' + this.top + 'px; left:' + this.left + 'px;position:absolute;" />';
+
+        }
+        diChuyen = function () {
+            this.left += 20;
+            console.log('ok: ' + this.left);
+        }
+    }
+       let cat = new Hero('cat.png', 20, 20, 100);
+
+
+        function start() {
+            if (cat.left < window.innerWidth - cat.size) {
+                cat.diChuyen();
+            }
+            document.getElementById("result").innerHTML = cat.getHeroElemt();
+            setTimeout(start, 1000);
+
+    }
+
+            start();
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
