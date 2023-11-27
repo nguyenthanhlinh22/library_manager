@@ -4,12 +4,27 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body><div id="tg"></div>
  <script>
-   let a = 0;
-   for(let i = 0 ; i>= 5 ; i++){
 
-   }
+     function veTamGiacVuongCanRong(h) {
+         for (let i = 0; i < h; i++) {
+             let row = '';
+             for (let j = 0; j < h; j++) {
+                 if (i === h - 1 || j === 0 || j === i) {
+                     row += '*';
+                 } else {
+                     row += ' ';
+                 }
+             }
+             console.log(row);
+         }
+     }
+
+
+     veTamGiacVuongCanRong(5);
+
+
  </script>
 
 </body>
