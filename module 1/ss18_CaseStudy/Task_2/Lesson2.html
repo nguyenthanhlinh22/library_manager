@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h1>Tam giác cân </h1>
+<p id="result"></p>
+
+
+<script>
+    function veTamGiacCan(h) {
+        for (let i = 1; i <= h; i++) {
+            // repeat dung de lap lai cac gia tri 
+            let spaces = ' '.repeat(h - i);
+            let stars = '*'.repeat(2 * i - 1);
+            console.log(spaces + stars);
+        }
+    }
+    let chieuCao = prompt('Nhập chiều cao của tam giác cần vẽ: ');
+    veTamGiacCan(parseInt(chieuCao));
+</script>
+
+    </body>
+</html>
