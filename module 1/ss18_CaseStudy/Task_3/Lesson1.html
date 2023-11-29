@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> bài 3 </h1>
+<script>
+
+          let n = parseInt(prompt("nhập số ban đầu "));
+          let a1 = [];
+          let a2 = [];
+          let sum = 0 ;
+          for (let i = 1 ; i <n; i++){
+              let num = parseInt(prompt("nhập số ban đầu "+ i+1))
+              a1.push(num);
+          }
+          for(let j = 0 ; j < a1.length ; j++){
+             sum += a1[j];
+             a2.push(sum);
+          }
+          document.write(a2);
+    
+    
+</script>
+</body>
+</html>

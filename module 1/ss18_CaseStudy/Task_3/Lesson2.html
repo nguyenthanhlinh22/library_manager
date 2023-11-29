@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task2 lesson2</title>
+</head>
+<body>
+<h1>Tas2 lesson2 : search number </h1>
+<script>
+      let n = parseInt(prompt("độ dài của mảng 1"));
+      let n1 = parseInt(prompt("độ dài của mảng 2"));
+      let a1 = [];
+      let a2 = [];
+
+      for (let i = 0 ; i < n ; i++) {
+        let numA1 = parseInt(prompt("nhập số mảng 1 "));
+        a1.push(numA1);
+
+      }
+      for(let j = 0 ; j < n1 ; j++ ){
+        let numA2 = parseInt(prompt("nhập số mảng 2 "));
+        a2.push(numA2);
+      }
+     function checkNum(arr1,arr2) {
+        if(arr1.length !== arr2.length){
+          return false ;
+        }
+        for(let i = 0 ; i < arr1.length ; i++){
+          if (arr1[i] !== arr2[i]){
+            return false;
+          }else if (arr1[i] !== arr1[i]){
+            return false ;
+          }else if  (arr2[i] !== arr2[i]){
+            return false ;
+          }
+
+        }
+        return true;
+
+
+
+
+     }
+
+      if(checkNum(a1,a2)) {
+        document.write("hai so giong nhau la "+a1);
+
+      }else {
+        document.write("không có số nào giống nhau ");
+      }
+
+
+</script>
+</body>
+</html>

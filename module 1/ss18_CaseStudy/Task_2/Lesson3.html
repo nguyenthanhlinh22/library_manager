@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>
+    example 3 : hinh tam gia can rong ;
+</h1>
+<script>
+    function hinhTamGiacCanRong(h) {
+        for(let i = 0 ; i < h ; i++){
+            let row = "";
+            let start = "" ;
+            for (let j = 0 ; j < h ; j++){
+                if (i === h - 1 || j === 0 || j === i) {
+                    row =  ' '.repeat(h - j);
+                    start = '*'.repeat(2 * j - 1);
+                    console.log(row+start)
+
+                } else {
+                    row += ' ';
+                    console.log(row);
+                }
+
+
+            }
+        }
+
+    }
+    let chieuCao = prompt('Nhập chiều cao của tam giác cần vẽ: ');
+    hinhTamGiacCanRong(parseInt(chieuCao));
+</script>
+
+</body>
+</html>
