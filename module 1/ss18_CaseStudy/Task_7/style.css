@@ -1,0 +1,86 @@
+.containerfull {
+    float: left;
+    width: 100%;
+
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.col9 {
+    float: left;
+    width: 80%;
+}
+
+.col3 {
+    float: left;
+    width: 20%;
+}
+
+.viewcart {
+    float: left;
+    width: 70%;
+}
+
+.ttdathang {
+    float: left;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.ttdathang h2 {
+    font-size: 18pt;
+    padding-left: 10px;
+    color: #444444;
+    border-left: 4px #FF9900 solid;
+}
+
+.ttdathang label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.ttdathang input[type=text],
+.ttdathang input[type=password],
+.ttdathang select,
+.ttdathang textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.ttdathang label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.ttdathang input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+.ttdathang input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.col3 button {
+    padding: 15px;
+    border-radius: 7px;
+    background-color: green;
+    color: white;
+}
+.col3 .coupon .boxcart input {
+    padding: 5px;
+    border-radius: 3px;
+    border: #948363 solid 1px;
+}
+/* Add more styles as needed */

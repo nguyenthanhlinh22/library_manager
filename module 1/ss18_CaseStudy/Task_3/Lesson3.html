@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson3</title>
+</head>
+        <body>
+        <h1>Task Lesson3</h1>
+            <script>
+                let n = parseInt(prompt("nhập có bao nhiêu số"));
+
+                let a1 = [];
+                let a2 = [];
+                let a3 = 0 ;
+                for (let i = 0 ; i < n ; i++){
+                    let num = parseInt(prompt("nhập các số để chia 1"));
+                    a1.push(num);
+
+                    for(let j = 0 ; j < 1 ; j ++) {
+                        let num1 = parseInt(prompt("nhập các số để chia 2"));
+                        a2.push(num1)
+                    }
+                }
+                function phanSo(arr1, arr2) {
+                    let result = [];
+                    for (let i = 0; i < n; i++) {
+                        let remainder = arr1[i] / arr2[i];
+                        result.push(remainder);
+                    }
+                    return result;
+                }
+
+                // Gọi hàm và lưu kết quả vào a3
+                a3 = phanSo(a1, a2);
+
+                for (let i = 0; i < n; i++) {
+                    console.log(`Kết quả của ${a1[i]} / ${a2[i]} là: ${a3[i]}`);
+                }
+
+
+            </script>
+        </body>
+</html>
