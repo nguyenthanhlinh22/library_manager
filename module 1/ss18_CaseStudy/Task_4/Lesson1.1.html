@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+
+  let fullname = ['   Nguyen   thanh   linh    '];
+
+  // Lấy phần tử đầu tiên từ mảng
+  let inputName = fullname[0];
+
+  // Chuẩn hóa xâu ký tự
+  let normalizedResult = '';
+  let words = inputName.trim().split(/\s+/);
+
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+    // Điều kiện 1: Nếu từ không phải khoảng trắng, chuẩn hóa và thêm vào chuỗi kết quả
+    if (word !== '') {
+      let normalizedWord = word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+      normalizedResult += normalizedWord + ' ';
+    }
+  }
+
+  console.log("Xâu trước khi chuẩn hóa:", inputName);
+  console.log("Xâu sau khi chuẩn hóa:", normalizedResult.trim());
+
+  // Tìm và in ra từ dài nhất trong xâu
+  let longestWord = '';
+  for (let i = 0; i < words.length; i++) {
+    let word = words[i];
+
+    // Điều kiện 2: Nếu từ có độ dài lớn hơn từ dài nhất hiện tại, cập nhật từ dài nhất
+    if (word.length > longestWord.length) {
+      longestWord = word;
+    }
+  }
+
+  console.log("Từ dài nhất trong xâu:", longestWord);
+
+
+</script>
+
 </body>
 </html>

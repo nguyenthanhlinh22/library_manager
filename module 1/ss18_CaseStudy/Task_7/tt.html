@@ -1,103 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-<section class="containerfull">
-    <div class="container">
-        <div class="col9 viewcart">
-            <div class="ttdathang">
-                <h2>Thông tin người đặt hàng</h2>
-
-                <label for="hoten"><b>Họ và tên</b></label>
-                <input type="text" placeholder="Nhập họ tên đầy đủ" name="hoten" id="hoten" required>
-
-                <label for="diachi"><b>Địa chỉ</b></label>
-                <input type="text" placeholder="Nhập địa chỉ" name="diachi" id="diachi" required>
-
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Nhập email" name="email" id="email" required>
-
-                <label for="dienthoai"><b>Điện thoại</b></label>
-                <input type="text" placeholder="Nhập điện thoại" name="dienthoai" id="dienthoai" required>
-            </div>
-            <div class="ttdathang">
-                <a onclick="showttnhanhang()" style="cursor: pointer;">
-                    &rArr; Thay đổi thông tin nhận hàng
-                </a>
-            </div>
-            <div class="ttdathang" id="ttnhanhang">
-                <h2>Thông tin người nhận hàng</h2>
-
-                <label for="hoten"><b>Họ và tên</b></label>
-                <input type="text" placeholder="Nhập họ tên đầy đủ" name="hoten" id="hoten" required>
-
-                <label for="diachi"><b>Địa chỉ</b></label>
-                <input type="text" placeholder="Nhập địa chỉ" name="diachi" id="diachi" required>
-
-                <label for="dienthoai"><b>Điện thoại</b></label>
-                <input type="text" placeholder="Nhập điện thoại" name="dienthoai" id="dienthoai" required>
-            </div>
+<div class="tittle_giohang">
+    <h3>Giỏ Hàng</h3>
+</div>
+<div class="list_giohang">
+    <table>
+       <tr>
+        <th>Mã DV</th>
+        <th>Tên DV</th>
+        <th>Hình</th>
+        <th>Đơn giá</th>
+        <th>Số lượng</th>
+        <th>Thành tiền</th>
+        <th>Thao Tac</th>
 
 
+        <tr class="tt_sp">
+            <td>TA-sadfsdaf</td>
+            <td> teen </td>
+            <td><img src="https://i.pinimg.com/564x/5d/27/0c/5d270c79121c562ebe2d51f9d2a4101f.jpg" height="80" alt=""></td>
+            <td>150.000vnd</td>
+            <td>1</td>
+            <td>150.000vnd</td>
+            <td> </td>
+       </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Tổng thành tiền:</th>
+            <th></th>
+            <th></th>
+            <th class="total_cart">150.000vnd</th>
+            <th></th>
+        </tr>
+    </table>
+</div>
 
-        </div>
-        <div class="col3">
-            <h2>ĐƠN HÀNG</h2>
-            <div class="total">
-                <div class="boxcart">
-                    <li>Sản phẩm 1 x 2</li>
-                    <li>Sản phẩm 2 x 3</li>
-                    <li>Sản phẩm 3 x 4</li>
+<!--    <div class="thongtindatlich">-->
+<!--        <div class="tittle_thongtindatlich">-->
+<!--            <h2>Thông tin khách hàng</h2>-->
+<!--        </div>-->
+<!--        <div class="form-datlich">-->
+<!--            <form action="/index.php?action=thanhtoan"  method="post">-->
+<!--                <input type="hidden" name="tongdonhang" value="<?=$tong?>">-->
+<!--                <div class="row-add-thongtin">-->
+<!--                    <label class="tt_tt">Họ và Tên</label>-->
+<!--                    <input type="text" name="name" placeholder="Họ và Tên">-->
+<!--                </div>-->
+<!--                <div class="row-add-thongtin">-->
+<!--                    <label class="tt_tt">Số Điện Thoại</label>-->
+<!--                    <input type="text" name="tel" placeholder="Số Điện Thoại">-->
+<!--                </div>-->
+<!--                <div class="row-add-thongtin">-->
+<!--                    <label class="tt_tt">Gmail</label>-->
+<!--                    <input type="email" name="email" placeholder="Gmail">-->
+<!--                </div>-->
+<!--                <div class="row-add-thongtin">-->
+<!--                    <label class="tt_tt">Địa Chỉ</label>-->
+<!--                    <input type="text" name="address" placeholder="Địa Chỉ">-->
+<!--                </div>-->
+<!--                <div class="row-add-thongtin pd" >-->
+<!--                    Ngày <br>-->
+<!--                    <input type="date" name="date">-->
+<!--                </div>-->
+<!--                <div class="row-pttt" >-->
+<!--                    <h2>Phương thức thanh toán</h2> <br>-->
+<!--                    <input type="radio" name="pttt" value="1">  Thanh toán qua ví momo <br>-->
+<!--                    <input type="radio" name="pttt" value="2">  Thanh toán trực tiếp<br>-->
+<!--                    <input type="radio" name="pttt" value="3">  Thanh toán qua tài khoản ngân hàng<br>-->
+<!--                </div>-->
+<!--                <div class="button_giohang">-->
+<!--                    <input type="submit" name="thanhtoan" class="btn_ttmh" value="Đặt lịch">-->
+<!--                    <input style="background-color: #DC3545;" type="submit" value="Xóa tất cả">-->
+<!--                </div>-->
+<!--            </form>-->
 
-                    <h3> Tổng: 1000000 </h3>
-                </div>
-            </div>
+<!--        </div>-->
 
-            <div class="coupon">
-                <div class="boxcart">
-                    <h3>Vouche: </h3>
-                    <input type="text" id="vocher" placeholder="Nhập vocher vào đây">
-                </div>
-            </div>
-            <div class="pttt">
-                <div class="boxcart">
-                    <h3>Phương thức thanh toán: </h3>
-                    <input type="radio" name="cod" id="1" checked> Tiền mặt<br>
-                    <input type="radio" name="vidienthu" id="1"> Ví điện tử<br>
-                    <input type="radio" name="chuyenkhoan" id="1"> Chuyển khoản<br>
-                    <input type="radio" name="thanhtoanonline" id="1"> Thanh toán online<br>
-                </div>
-            </div>
-            <div class="total">
-                <div class="boxcart bggray">
-                    <h3>Tổng thanh toán: 1000000</h3>
-                </div>
-            </div>
-            <button>Thanh toán</button>
-        </div>
-
-
-    </div>
-</section>
-<script>
-    var ttnhanhang=document.getElementById("ttnhanhang");
-    ttnhanhang.style.display="none";
-    function showttnhanhang(){
-        if(ttnhanhang.style.display==="none"){
-            ttnhanhang.style.display="block";
-        }else{
-            ttnhanhang.style.display="none";
-        }
-    }
-</script>
-
-
-
-
+<!--    </div>-->
 
 
 

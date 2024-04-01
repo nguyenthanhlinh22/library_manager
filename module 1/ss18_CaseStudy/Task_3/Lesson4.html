@@ -13,22 +13,25 @@
 
 
 
-        let n = parseInt(prompt("nhập số lượng sản phẩm trong menu "));
-        let menu = [];
+        let n = parseInt(prompt("nhập số lượng sản phẩm  "));
+        let sanpham = [];
+        let hang = [];
         let price = [];
         for (let i = 0 ; i < n ; i++){
             let arr = prompt(`nhập menu của món thứ ${i+1}`);
             let arr1 = parseInt(prompt(`nhập giá của món thứ ${i+1}`));
-            menu.push(arr);
+            let arr3 = prompt(`nhập hãng ${i+1}`);
+            hang.push(arr3)
+            sanpham.push(arr);
             price.push(arr1);
-            document.write( (i+1)+":" +menu[i] + "giá"+" "+new Intl.NumberFormat().format(price[i])+"VNĐ"+"<br>");
+            document.write( (i+1)+":" +sanpham[i] +"hãng" + hang[i] +"giá"+" "+new Intl.NumberFormat().format(price[i])+"VNĐ"+"<br>");
 
         }function menu1() {
             let selectedMenuIndex = parseInt(document.getElementById('mon').value);
 
             if (selectedMenuIndex >= 1 && selectedMenuIndex <= n) {
 
-                document.getElementById('result').innerText = `Bạn đã chọn: ${menu[selectedMenuIndex - 1]} giá ${new Intl.NumberFormat().format(price[selectedMenuIndex - 1])}  VNĐ`;
+                document.getElementById('result').innerText = `Bạn đã chọn: ${sanpham[selectedMenuIndex - 1]}  hãng ${hang[selectedMenuIndex - 1]}   giá ${new Intl.NumberFormat().format(price[selectedMenuIndex - 1])}  VNĐ`;
             } else {
                 document.getElementById('result').innerText = "Món không hợp lệ";
             }

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Kiểm tra kí tự đối xứng </h1>
+
+<script>
+    let n = prompt("Nhập số kí tự: ");
+    let arr1 = [];
+
+    for (let i = 0; i < n; i++) {
+        let chusp = prompt("Nhập kí tự: ");
+        arr1.push(chusp);
+    }
+
+    function isSymmetric(arr) {
+        return arr.join('') === arr.slice().reverse().join('');
+    }
+
+    let result = isSymmetric(arr1);
+
+    if (result) {
+        console.log("Dãy kí tự là đối xứng.");
+    } else {
+        console.log("Dãy kí tự không đối xứng.");
+    }
+</script>
+</body>
+</html>

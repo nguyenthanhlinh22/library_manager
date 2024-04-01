@@ -17,7 +17,7 @@
 
         function add_element() {
             array[x] = document.getElementById("txtValue").value;
-            alert("element :" + array[x] + " add at index" + x );
+            alert("element :" + array[x] + " add at index" + x  +"");
             // tăng lên 1
             x++;
             document.getElementById("txtValue").innerHTML =  '';
@@ -26,7 +26,7 @@
         function delete_element() {
             let e = "<hr>";
             for(let i = 0 ; i < array.length ; i++){
-                e+=  array[i] + "<br>";
+                e+=  array[i] + "  " ;
 
             }
             document.getElementById("result").innerHTML = e ;

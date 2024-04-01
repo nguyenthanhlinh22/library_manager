@@ -1,10 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <title>Document</title>
 </head>
 <body>
-$END$
+<script>
+    function isPrimeNumber(number) {
+        if (number <= 1) {
+            return false;
+        }
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    const count = prompt("Nhập số lượng số nguyên tố :");
+
+
+    const primeNumbers = [];
+    const so = [];
+
+
+    for (let i = 0; i < count; i++) {
+        const userInput = prompt(`Nhập số thứ ${i + 1}:`);
+        so.push(userInput);
+        const number = parseInt(userInput);
+
+        if (!isNaN(number) && isPrimeNumber(number)) {
+            primeNumbers.push(number);
+        } else {
+            console.log(`Vui lòng nhập một số nguyên tố.`);
+            i--; // Giảm biến đếm để nhập lại số không hợp lệ
+        }
+    }
+
+    // Sắp xếp mảng số nguyên tố từ nhỏ đến lớn
+    primeNumbers.sort(function(a, b) {
+        return a - b;
+    });
+
+    console.log(so);
+    console.log("Số nguyên tố từ nhỏ đến lớn:");
+    console.log(primeNumbers.join(", "));
+
+</script>
+
 </body>
 </html>

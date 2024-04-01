@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+ <script>
+     function demKiTuInHoa(chuoi) {
+         if (/[A-Z]/.test(chuoi)) {
+             return (chuoi.match(/[A-Z]/g) || []).length;
+         } else {
+             return "The Strings is not contain upper char";
+         }
+     }
+
+
+     var chuoiTest = prompt("nhập kí tự ");
+     var ketQua = demKiTuInHoa(chuoiTest);
+
+     console.log(ketQua);
+
+
+ </script>
+
 </body>
 </html>

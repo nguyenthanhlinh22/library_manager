@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            border: 1 ;
+            width:300;
+            cellspacing:0 ;
+            cellpadding: 15 ;
+        };
+    </style>
+</head>
+<body>
+<button onclick="nhap()">Nhập sinh viên</button>
+<button onclick="Delete()">Xóa Sinh viên</button>
+<button onclick="update()">sửa sinh viên</button>
+<table>
+    <tr>
+        <td>ID</td>
+        <td>name</td>
+        <td>lớp sinh viên </td>
+        <td>gmail sinh viên</td>
+        <td>ngày sinh của sinh viên </td>
+    </tr>
+</table>
+<p class="result"></p>
+
+<script>
+    let name = prompt("nhập tên sinh viên");
+    let lop =  prompt("Nhập lớp sinh viên");
+    let gmail = prompt("Nhập gmail sinh viên ");
+    let date = prompt("nhập ngày sinh");
+
+    function nhap() {
+        for (let i  = 0 ; i >= 50 ; i++){
+            let name = prompt("nhập tên sinh viên");
+            let lop =  prompt("Nhập lớp sinh viên");
+            let gmail = prompt("Nhập gmail sinh viên ");
+            let date = prompt("nhập ngày sinh");
+
+            for (let j = 0 ; j > i ; j++){
+
+
+            }
+
+
+        }
+    }
+    // nhap();
+</script>
+
+</body>
+</html>

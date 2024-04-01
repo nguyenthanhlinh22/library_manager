@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Information</title>
+</head>
+<body>
+<div id="productInfo"></div>
+<button onclick="add">Thêm </button>
+
+<script>
+  class Product {
+    constructor(code, name, price ,hang) {
+      this.code = code;
+      this.name = name;
+      this.price = price;
+      this.hang = hang ;
+    }
+
+    displayInfo() {
+      const infoElement = document.getElementById("productInfo");
+      infoElement.innerHTML += `<p>Mã sản phẩm: ${this.code}</p>`;
+      infoElement.innerHTML += `<p>Tên sản phẩm: ${this.name}</p>`;
+      infoElement.innerHTML += `<p>Giá sản phẩm: ${this.price}</p>`;
+      infoElement.innerHTML += `<p>Giá sản phẩm: ${this.hang}</p>`;
+    }
+  }
+
+  // Nhập thông tin sản phẩm từ người dùng
+  const productCode = prompt("Nhập mã sản phẩm:");
+  const productName = prompt("Nhập tên sản phẩm:");
+  const productPrice = prompt("Nhập giá sản phẩm:");
+  const productHang = prompt("Nhập hãng sản phẩm:");
+
+  // Tạo một đối tượng sản phẩm từ lớp Product
+  const product = new Product(productCode, productName, parseFloat(productPrice) , productHang);
+
+  // Hiển thị thông tin sản phẩm
+  product.displayInfo();
+</script>
+</body>
+</html>
+nhập từ bàn phím mảng số nguyên gồm n phần tử (n <= 20 ) . hiển thị ra màng hình danh sách các phần tử của mảng , hiệu của tổng số chẵn và tổng các số lẻ có trong mảng javacript
+

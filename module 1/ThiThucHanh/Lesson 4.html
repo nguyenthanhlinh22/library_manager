@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    class Product {
+        constructor(code, name, price) {
+            this.code = code;
+            this.name = name;
+            this.price = price;
+        }
+
+        displayInfo() {
+            console.log(`Mã sản phẩm: ${this.code}`);
+            console.log(`Tên sản phẩm: ${this.name}`);
+            console.log(`Giá sản phẩm: ${this.price}`);
+        }
+    }
+
+    // Nhập thông tin sản phẩm từ người dùng
+    const productCode = prompt("Nhập mã sản phẩm:");
+    const productName = prompt("Nhập tên sản phẩm:");
+    const productPrice = prompt("Nhập giá sản phẩm:");
+
+    // Tạo một đối tượng sản phẩm từ lớp Product
+    const product = new Product(productCode, productName, parseFloat(productPrice));
+
+    // Hiển thị thông tin sản phẩm
+    console.log("Thông tin sản phẩm:");
+    product.displayInfo();
+
+</script>
+</body>
+</html>

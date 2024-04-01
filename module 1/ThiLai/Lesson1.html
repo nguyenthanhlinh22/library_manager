@@ -1,10 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
 </head>
 <body>
-$END$
+<h1> </h1>
+<script>
+    let arr1 =[];
+    let arr2 = [];
+    function nhapMang() {
+        let n = prompt("Nhập số phần tử của mảng nhỏ hơn 20 :");
+        n = parseInt(n);
+
+        if (isNaN(n) || n <= 0 || n > 20) {
+            alert("Vui lòng nhập một số nguyên dương không quá 20.");
+            return;
+        }
+        const mang = [];
+        for (let i = 0; i < n; i++) {
+            const phanTu = prompt("Nhập phần tử thứ " + (i + 1) + ":");
+            mang.push(parseInt(phanTu));
+        }
+
+        return mang;
+    }
+
+    function tinhVaHienThiHieu(mang) {
+        let tongChan = 0;
+        let tongLe = 0;
+
+        for (let i = 0; i < mang.length; i++) {
+            if (mang[i] % 2 === 0) {
+                tongChan += mang[i];
+                arr1.push(tongChan);
+            } else {
+                tongLe += mang[i];
+                arr2.push(tongLe);
+            }
+        }
+
+        var hieu = tongChan - tongLe;
+        console.log("Tổng các số chẵn - Tổng các số lẻ là: " + hieu);
+    }
+
+    // Thực thi chương trình
+    var mangNhap = nhapMang();
+    if (mangNhap) {
+        tinhVaHienThiHieu(mangNhap);
+    }
+
+
+</script>
 </body>
 </html>
