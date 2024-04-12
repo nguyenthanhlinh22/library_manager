@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="canvas" width="500" height="500" style="border: 2px solid #421d1d"></canvas>
+<script>
+    class Circle {
+        canvas;
+        constructor(x,y,radius,color) {
+            this.x = x ;
+            this.y = y ;
+            this.radius = radius;
+            this.color = color;
+            this.canvas = document.getElementById("canvas");
+            this.ctx = this.canvas.getContext("2d");
+            this.directionX = 1 ;
+            this.directionY = 1 ;
+        }
+        draw(){
+            this.ctx.beginPath();
+            this.ctx.arc(this.x , this.y , this.radius,0,Math.PI*2);
+            this.ctx.fillStyle=this.color;
+            this.ctx.fill();
+        }
+        move(){
+            this.ctx.clearRect(0,0,this.canvas.width,this.canvas.height);this.y += this.directionY*3;
+            if (this.y - this.radius <= 0 || this.y + this.radius >= this.canvas.height ){
+                this.directionY *=-1;
+            }
+            if (this.x - this.radius <= 0 || this.x + this.radius >= this.canvas.width) {
+                this.directionX *= -1;
+            }
+            this.draw();
+        }
+    }
+    let circle1 = new Circle(100, 270, 30, "red");
+    circle1.draw();
+    setInterval(() => {
+        circle1.move();
+
+    }, 1)
+</script>
+</body>
+</html>
