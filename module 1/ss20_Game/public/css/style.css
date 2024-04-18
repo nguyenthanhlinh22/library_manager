@@ -1,32 +1,106 @@
-/* reset css */
+.container {
+  justify-content: center;
+  align-items: center;
+  height: 870px;
+  background-color: #FFD1E3;
+}
 
+.container .title-game {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+
+.container .title-game h1{
+  text-align: center;
+  letter-spacing: 2px;
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  width: 100%;
+}
+
+.score {
+  text-align: center;
+  font-size: 30px;
+  color: salmon;
+  font-weight: bold;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 30px;
+}
+
+.score label {
+  color: black;
+  padding-left: 5px;
+}
+
+hr {
+  width: 20%;
+  margin: 0;
+  text-align: center;
+}
 
 .memory-game {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .title_memory-game{
-    
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.body-game{
+  width: 100%;
+  height: 500px;
+  margin-left: 50px;
+}
+.cards {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+ 
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: url("23.jpg");
+}
+
+.flipped {
+  background-size: cover !important;
+}
+
+.dir-game{
+  align-items: center;
+  margin-left: 750px;
+}
+
+.dir-game #reset{
+  padding: 15px 50px;
+  background-color: green;
+  border-radius: 10px;
+  border: 1px solid black;
+  letter-spacing: 1px;
   
-  .cards {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 300px;
-  }
+}
+.dir-game #start{
+  padding: 15px 50px;
+  background-color: green;
+  border-radius: 10px;
+  border: 1px solid black;
+  letter-spacing: 1px;
   
-  .card {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    background-color: #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .flipped {
-    background-size: cover !important;
-  }
-  
+}
+.dir-game #reset:hover{
+  background-color: #AFD198;
+transition: 0.5s;
+}
+.dir-game #start:hover{
+  background-color: #9B3922;
+transition: 0.5s;
+}
+
