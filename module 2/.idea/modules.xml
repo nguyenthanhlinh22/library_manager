@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Ss13_Seach Algorithms/Ss13_Seach Algorithms.iml" filepath="$PROJECT_DIR$/Ss13_Seach Algorithms/Ss13_Seach Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ss14_Sorting Algorithms/Ss14_Sorting Algorithms.iml" filepath="$PROJECT_DIR$/Ss14_Sorting Algorithms/Ss14_Sorting Algorithms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ss15_Debug/Ss15_Debug.iml" filepath="$PROJECT_DIR$/Ss15_Debug/Ss15_Debug.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/module 2.iml" filepath="$PROJECT_DIR$/.idea/module 2.iml" />
     </modules>
   </component>
