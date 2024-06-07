@@ -52,4 +52,10 @@ public class Funciton {
         saveUsers(users);
         System.out.println("Người dùng đã được thêm vào danh sách.");
     }
+    static void out() {
+        System.out.println("Bạn chọn chức năng thoát! Tạm biệt!");
+        System.exit(0);
+
+
+    }
 }
