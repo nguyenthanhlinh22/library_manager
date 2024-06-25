@@ -8,9 +8,8 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("---------------------WELCOME-------------------");
             System.out.println("-----Medical Record Management Program---------");
-            System.out.println("---------------------Menu:---------------------");
+            System.out.println("Menu:");
             System.out.println("1. Add new medical record");
             System.out.println("2. Delete medical record");
             System.out.println("3. View all medical records");

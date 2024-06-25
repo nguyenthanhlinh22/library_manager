@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b6673575-70e3-470e-9ad5-849b033d5af3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Thi_ASM/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Thi_ASM/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thi_ASM/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thi_ASM/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thi_ASM/medical_records.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Thi_ASM/medical_records.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thi_ASM/medical_records.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thi_ASM/src/MedicalRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thi_ASM/src/MedicalRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thi_ASM/src/MedicalRecordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thi_ASM/src/MedicalRecordManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Thi_ASM/src/VipMedicalRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Thi_ASM/src/VipMedicalRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-mvc/src/service/FileService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo-mvc/src/service/FileService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo-mvc/src/service/product.txt" beforeDir="false" afterPath="$PROJECT_DIR$/demo-mvc/src/service/product.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2iN6tr2NZwQ5Lhih8j7RNKXdf7O" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/07_CodeGym/C0224M1-JV103-NguyenThanhLinh/module 2/mvc/demo-mvc",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6673575-70e3-470e-9ad5-849b033d5af3" name="Changes" comment="" />
+      <created>1719318904596</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1719318904596</updated>
+      <workItem from="1719318905638" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

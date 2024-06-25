@@ -25,8 +25,8 @@ public class MedicalRecordManager {
                 String medicalRecordCode = data[1];
                 String patientCode = data[2];
                 String patientName = data[3];
-                LocalDate admissionDate = LocalDate.parse(data[4], DATE_FORMATTER);
-                LocalDate dischargeDate = LocalDate.parse(data[5], DATE_FORMATTER);
+                LocalDate admissionDate = LocalDate.parse(data[4] );
+                LocalDate dischargeDate = LocalDate.parse(data[5]);
                 String reason = data[6];
 
                 if (data.length == 8) { // Normal Medical Record
@@ -131,11 +131,10 @@ public class MedicalRecordManager {
             System.out.println("Medical record not found.");
         }
     }
+
     public void displayMedicalRecords() {
         for (MedicalRecord record : records) {
             record.display();
         }
     }
 }
-
-

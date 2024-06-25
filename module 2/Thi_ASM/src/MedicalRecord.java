@@ -11,13 +11,8 @@ public abstract class MedicalRecord {
     protected LocalDate dischargeDate;
     protected String reason;
 
-    public MedicalRecord(int id,
-                         String medicalRecordCode,
-                         String patientCode,
-                         String patientName,
-                         LocalDate admissionDate,
-                         LocalDate dischargeDate,
-                         String reason) {
+    public MedicalRecord(int id, String medicalRecordCode, String patientCode, String patientName,
+                         LocalDate admissionDate, LocalDate dischargeDate, String reason) {
         this.id = id;
         this.medicalRecordCode = medicalRecordCode;
         this.patientCode = patientCode;
@@ -30,4 +25,3 @@ public abstract class MedicalRecord {
     public abstract String toCSV();
     public abstract void display();
 }
-

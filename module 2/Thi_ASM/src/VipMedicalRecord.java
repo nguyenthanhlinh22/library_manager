@@ -15,13 +15,7 @@ public class VipMedicalRecord extends MedicalRecord {
                             String reason,
                             String vipPackage,
                             LocalDate vipExpiryDate) {
-        super(id,
-                medicalRecordCode,
-                patientCode,
-                patientName,
-                admissionDate,
-                dischargeDate,
-                reason);
+        super(id, medicalRecordCode, patientCode, patientName, admissionDate, dischargeDate, reason);
         this.vipPackage = vipPackage;
         this.vipExpiryDate = vipExpiryDate;
     }
