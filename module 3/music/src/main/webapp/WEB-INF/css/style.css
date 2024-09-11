@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+    margin: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: deepskyblue;
+
+}
+p{
+    text-align: center;
+}
+btn{
+    margin-right: 20px ;
+}
+.input-key{
+    padding: 5px;
+    margin-left: 10px;
+}

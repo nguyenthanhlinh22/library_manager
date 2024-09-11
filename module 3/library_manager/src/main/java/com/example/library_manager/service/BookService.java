@@ -70,5 +70,18 @@ public class BookService {
         int id = Integer.parseInt(req.getParameter("id"));
         this.bookModel.destroyBook(id);
 
+    };
+
+    public void createBook(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException, SQLException  {
+        String name = request.getParameter("name");
+        String description = request.getParameter("description");
+        String price = request.getParameter("price");
+        String category_id = request.getParameter("category_id");
+
+        int priceInt = Integer.parseInt(price);
+
+        Book book = new Book(name, description, priceInt , Integer.parseInt(category_id));
+        this.bookModel.store(book);
     }
+
 }

@@ -47,4 +47,21 @@ public class BookController extends HttpServlet {
             }
 
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String url = req.getPathInfo();
+        switch (url) {
+            case "/create":
+                try {
+                    this.bookService.createBook(req, resp);
+                    resp.sendRedirect("/books");
+                } catch (SQLException e) {
+                    throw new RuntimeException(e);
+                }
+
+                break;
+
+        }
+    }
 }

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org"  lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List User</title>
+    <style>
+        table {
+            width: 400px;
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding:  10px;
+        }
+    </style>
+</head>
+<body>
+    <a th:href="@{/users/add}"> add user</a>
+    <table>
+        <tr>
+            <td>#</td>
+            <td>Name</td>
+            <td>Action</td>
+        </tr>
+        <tr th:each="user : ${listuser}">
+            <td th:text="${user.id}"></td>
+            <td th:text="${user.name}"></td>
+            <td><a onclick="return confirm('bạn có muốn xoá không ')" th:href="@{/users/{id}/delete(id=${user.id})}">DELETE</a></td>
+        </tr>
+    </table>
+
+</body>
+</html>
